@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "pug": "2.0.4"
+  },
+  "name": "public",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:romeiR/public.git",
+  "author": "ROMEI <yuyama1629@gmail.com>",
+  "license": "MIT"
+}
