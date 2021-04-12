@@ -7,9 +7,6 @@ const basic = auth.basic({
   file: './users.passwd'
 });
 
-function a () {
-  console.info("aaa");
-}
 
 const server = http
   .createServer(basic,(req, res) => {
