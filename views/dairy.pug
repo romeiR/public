@@ -6,16 +6,16 @@ html(lang="ja")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title YSの日記
   body 
+    a(href="/logout") ログアウト
     h1 YSの日記
-    h3 4月11日日曜日
-    p 今日から日記をつけることにしました！
-    <br>今日は一日中家にいましたが、YouTubeを見たり
-    <br>この日記をつける為にN予備校を参考にしながら
-    <br>初心者ながら作って見ました！
-    <br>
-    <br>
-    
-     form(method="post" action="/posts")
+
+    h2 日記一覧
+
+      each content in contents
+        p #{content}
+        hr
+
+    form(method="post" action="/home/dairy")
       div
         textarea(name="content" cols=40 rows=4)
       div

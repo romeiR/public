@@ -1,10 +1,19 @@
 'use strict';
 const http = require('http');
 const router = require('./lib/router');
+const auth = require('http-auth');
+const basic = auth.basic({
+  realm: 'Enter username and password.',
+  file: './users.passwd'
+});
+
+function a () {
+  console.info("aaa");
+}
+
 const server = http
-  .createServer((req, res) => {
+  .createServer(basic,(req, res) => {
     router.route(req,res);
-    res.end();
   })
   .on('error', e => {
     console.error('Server Error', e);
