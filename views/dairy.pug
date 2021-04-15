@@ -10,12 +10,14 @@ html(lang="ja")
     a 
     a(href="/home") ホーム 
     h1 YSの日記
-
+    h2 #{ID_now}
     h2 日記一覧
-      each content in contents
-        h3 ID : #{ID_sec}
-        p #{content}
-        hr
+    - for (let i = 0; i < contents.length; i++)
+      hr
+      hr
+      h3 #{ID_name[i]}<br>
+      hr
+      p #{contents[i]}<br>
 
     form(method="post" action="/home/dairy")
       div
@@ -25,3 +27,8 @@ html(lang="ja")
       div 
         p ＜注意＞ 改行を連続で二つ以上入れるとバグるので
           <br>投稿しないでください
+
+        //h3 ID : #{ID_name}
+      //each content in contents
+        p #{content}
+        hr
