@@ -1,5 +1,19 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "pug": "2.0.4"
   }
+=======
+    "axios": "^0.21.1",
+    "cookies": "0.5.1",
+    "http-auth": "3.2.3",
+    "pug": "2.0.4"
+  },
+  "name": "public",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:romeiR/public.git",
+  "author": "ROMEI <yuyama1629@gmail.com>",
+  "license": "MIT"
+>>>>>>> sub
 }
